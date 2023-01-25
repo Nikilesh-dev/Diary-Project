@@ -1,0 +1,40 @@
+﻿<Page x:Class="Dashboard.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dashboard"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1200"
+      Title="Page2">
+
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="Transparent"></SolidColorBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+       
+
+            <Label Content="WELCOME T0  COLLECT YOUR MEMORIES" Grid.Column="0" Grid.Row="0" FontFamily="Italic" FontSize="30" FontWeight="Medium" VerticalContentAlignment="Top" Margin="40,30,0,0" HorizontalAlignment="Center" Grid.ColumnSpan="2"></Label>
+            <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="left" Margin="60,60,40,0" VerticalAlignment="Bottom">
+                <Label Content="Enter Date :" Margin="0,5,0,0" FontSize="25" FontWeight="Medium"></Label>
+                <TextBox x:Name="txtdate" Width="220" Height="40"  Margin="20,0,0,0"  Background="Transparent" FontSize="19" FontWeight="Medium" HorizontalAlignment="Right" VerticalContentAlignment="Bottom" Padding="0,0,0,5" ></TextBox>
+            <Border  Height="35" Width="130"  Margin="20,0,0,0"  Background="#E2A600" BorderThickness="0" CornerRadius="15" >
+                <Button Content="COLLECT" Height="35" Width="130" Background="Transparent" Foreground="White" FontSize="15" FontWeight="SemiBold" BorderThickness="0" Click="Button_Click"  ></Button>
+            </Border>
+        </StackPanel>
+
+   
+        <Border Height="380" Grid.Column="0" Grid.Row="2"  Margin="69,30,147,0" BorderBrush="#E2A600" BorderThickness="5" CornerRadius="10" Background="Transparent">
+            <TextBox x:Name="txtWrite" Height="380" AcceptsReturn="True" VerticalAlignment="Center" FontSize="18" FontWeight="Medium"  Padding="10" Background="White" IsReadOnly="True" />
+        </Border>
+
+    </Grid>
+</Page>

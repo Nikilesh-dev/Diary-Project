@@ -1,0 +1,57 @@
+﻿<Page x:Class="Dashboard.Page4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dashboard"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page4">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Content="DAILY EXPENSES" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" FontSize="29" FontWeight="Medium" Margin="0,0,60,0"></Label>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,50,0">
+            <Image Source="C:\Users\nikilesh\Downloads\icons8-electricity-hazard-100.png" Height="20"></Image>
+            <Label Content="Electricity" x:Name="lblelex" FontSize="18" FontWeight="Medium" Margin="10,0,0,0" ></Label>
+        </StackPanel>
+        <TextBox x:Name="txtelec" Grid.Row="1" Grid.Column="1" Height="35" Width="200" HorizontalAlignment="Left" VerticalContentAlignment="Center" FontSize="16" FontWeight="Medium" ></TextBox>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,50,0">
+            <Image Source="C:\Users\nikilesh\Downloads\icons8-medical-bag-50.png" Height="20"></Image>
+            <Label Content="Medical" FontSize="18" x:Name="lblMed" FontWeight="Medium" Margin="25,0,0,0" HorizontalContentAlignment="Left"></Label>
+        </StackPanel>
+        <TextBox x:Name="txtmedical" Grid.Row="2" Grid.Column="1" Height="35" Width="200" HorizontalAlignment="Left"  VerticalContentAlignment="Center" FontSize="16" FontWeight="Medium"></TextBox>
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,50,0">
+            <Image Source="C:\Users\nikilesh\Downloads\icons8-country-house-50.png" Height="20"></Image>
+            <Label Content="House" FontSize="18" x:Name="lblhome" FontWeight="Medium" Margin="37,0,0,0" ></Label>
+        </StackPanel>
+        <TextBox x:Name="txthouse" Grid.Row="3" Grid.Column="1" Height="35" Width="200" HorizontalAlignment="Left"  VerticalContentAlignment="Center" FontSize="16" FontWeight="Medium"></TextBox>
+        <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,50,0">
+            <Image Source="C:\Users\nikilesh\Downloads\icons8-money-transfer-30.png" Height="20"></Image>
+            <Label Content="Others" FontSize="18" x:Name="lblother" FontWeight="Medium" Margin="35,0,0,0" ></Label>
+        </StackPanel>
+        <TextBox x:Name="txtothers" Grid.Row="4" Grid.Column="1" Height="35" Width="200" HorizontalAlignment="Left"  VerticalContentAlignment="Center" FontSize="16" FontWeight="Medium"></TextBox>
+        <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="150,0,50,0">
+            <Image Source="C:\Users\nikilesh\Downloads\icons8-calendar-30.png" Height="20"></Image>
+            <Label Content="Date" FontSize="18" FontWeight="Medium" Margin="55,0,0,0"></Label>
+        </StackPanel>
+        <TextBox x:Name="txtDate" Grid.Row="5" Grid.Column="1" Height="35" Width="200" HorizontalAlignment="Left"  VerticalContentAlignment="Center" FontSize="16" FontWeight="Medium"></TextBox>
+        <Border Grid.Row="6" Grid.ColumnSpan="2" Grid.Column="0" Height="35" Width="130"  Background="#E2A600" BorderThickness="0" CornerRadius="15" >
+            <Button Content="SAVE" Height="35" Width="130" Background="Transparent" Foreground="White" FontSize="18" FontWeight="SemiBold" BorderThickness="0" Click="Button_Click" ></Button>
+        </Border>
+    </Grid>
+</Page>

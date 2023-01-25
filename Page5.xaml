@@ -1,0 +1,35 @@
+﻿<Page x:Class="Dashboard.Page5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dashboard"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page5">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Content="CHECK YOUR EXPENSES" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="33" FontWeight="Medium" ></Label>
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="left" Margin="60,60,40,0" VerticalAlignment="Bottom">
+            <Label Content="Enter Date :" Margin="0,5,0,0" FontSize="25" FontWeight="Medium"></Label>
+            <TextBox x:Name="txtdate" Width="220" Height="40"  Margin="20,0,0,0"  Background="Transparent" FontSize="19" FontWeight="Medium" HorizontalAlignment="Right" VerticalContentAlignment="Bottom" Padding="0,0,0,5" ></TextBox>
+            <Border  Height="35" Width="130"  Margin="20,0,0,0"  Background="#E2A600" BorderThickness="0" CornerRadius="15" >
+                <Button Content="CHECK" Height="35" Width="130" Background="Transparent" Foreground="White" FontSize="15" FontWeight="SemiBold" BorderThickness="0" Click="Button_Click"  ></Button>
+            </Border>
+            
+        </StackPanel>
+        <Border Height="300" Grid.Column="0" Grid.Row="2"  Margin="69,30,147,0"  Background="Transparent" BorderThickness="0">
+            <TextBox x:Name="txtWrite" Height="380" AcceptsReturn="True" VerticalAlignment="Center" FontSize="18" FontWeight="Medium"  Padding="10" Background="White" IsReadOnly="True" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  />
+        </Border>
+
+    </Grid>
+    
+</Page>
